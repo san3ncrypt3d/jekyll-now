@@ -4,6 +4,9 @@ title: About
 permalink: /about/
 ---
 
+![_config.yml]({{ site.baseurl }}/images/san.png)
+
+
 Hello guys - My name is sanjay Babu, I am a cyber security consulant specialised in security research, penetration testing, red teaming, malware, exploits, reverse engineering, source code review, hacking, social engineering etc..
 
 • Efficiently synthesize project information and accurately establish project scope (Yes I have worked as a Jr Project Manager)
