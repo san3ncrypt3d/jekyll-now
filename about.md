@@ -4,12 +4,20 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hello guys - My name is sanjay Babu, I am a cyber security consulant specialised in security research, penetration testing, red teaming, malware, exploits, reverse engineering, source code review, hacking, social engineering etc..
 
-### More Information
+• Efficiently synthesize project information and accurately establish project scope (Yes I have worked as a Jr Project Manager)
 
-A place to include any other types of information that you'd like to include about yourself.
+• proven quality assurance, risk management and change management expertise
 
-### Contact me
+• Developed Black Box Security test environments & conducted tests as part of team for precautionary measures, Created written reports, detailing assessment findings and recommendations.
 
-[email@domain.com](mailto:email@domain.com)
+• Performed risk assessments to ensure corporate compliance
+
+•Active participant of CTF
+
+•Active participant of Defcon, Bsides, SecTor and pretty much go to all security conference I can :)
+
+•Lock picking enthusiast
+
+If you like to contact me click below :)
