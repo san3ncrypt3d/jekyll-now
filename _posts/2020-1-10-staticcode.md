@@ -31,7 +31,7 @@ Running codes in a static code analyzer is a great way to find out if you missed
 | YASCA | .Net, Java, C/C++, HTML, JavaScript, ASP, ColdFusion, PHP, COBOL  |
 | Code Warrior | C, C#, PHP, Java, Ruby, ASP, JavaScript |
 
-RECOMMENDED TOOLS
+## RECOMMENDED TOOLS
 
 | Language | Tools |
 | --- | --- |
@@ -50,7 +50,7 @@ RECOMMENDED TOOLS
 
 
  
- **Brakeman**
+ ## Brakeman
 
 | Source | [https://github.com/presidentbeef/brakeman](https://github.com/presidentbeef/brakeman) |
 | --- | --- |
@@ -61,7 +61,7 @@ RECOMMENDED TOOLS
 | Comment | This is preferred tool for ruby code analysis for finding vulnerability. |
 
 
-**Reek**
+## Reek
 
 | Source | [https://github.com/troessner/reek](https://github.com/troessner/reek) |
 | --- | --- |
@@ -102,9 +102,7 @@ RECOMMENDED TOOLS
 | Source | [https://githulb.com/Microsoft/pyright](https://githulb.com/Microsoft/pyright)  |
 | --- | --- |
 | Configuration and setup | Easy if you have npm installed, otherwise will have to configure node/npm.   |
-| Description |
-- Based on type-checking
-Pyright doesn&#39;t look for most common vulnerabilities. However, returns a lot of errors based on code hygiene. |
+| Description | - Based on type-checking. Pyright doesn't look for most common vulnerabilities. However, returns a lot of errors based on code hygiene. |
 
 ## Jshint
 
@@ -122,10 +120,9 @@ Pyright doesn&#39;t look for most common vulnerabilities. However, returns a lot
 - Set up apache2
 - Set up mysql
 Access the rip downloaded folder via localhost. |
-| Description |  This is a great tool for PHP code review. Its vulnerability based and check for client-side attacks and server-side attacks. The scan runs fast, and results looks neat. Additionally, it has features such as verbosity level, regex-based searches etc.    Pros:
-- Fast results with range of security controls
-- Nice reporting with visualizations makes fixing vulnerabilities faster
-  |
+| Description |  This is a great tool for PHP code review. Its vulnerability based and check for client-side attacks and server-side attacks. The scan runs fast, and results looks neat. Additionally, it has features such as verbosity level, regex-based searches etc.|
+
+| Pros | - Fast results with range of security controls - Nice reporting with visualizations makes fixing vulnerabilities faster |
 
 ## Jsprime
 
@@ -158,3 +155,6 @@ Access the rip downloaded folder via localhost. |
 | --- | --- |
 | Configuratinn and setup | Install using make |
 | Description | This is a Multilanguage scanner focused on security vulnerabilities. The scanner is only supported in Linux operating system and have a GUI. Returns good results comparatively and low number of false positives. |
+
+
+LOL I was lazy to make tables for all the tools metioned above with additional details so if you have any questions let me know and I will clarify/answer your question(s).
