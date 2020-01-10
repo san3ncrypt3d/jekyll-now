@@ -8,7 +8,7 @@ Hey Guys, For anyone who is intrested in code review and don't know where to sta
 Running codes in a static code analyzer is a great way to find out if you missed any vulnerability while reviewing codes line by line. 
 
 
-
+|------ ---------------------
 | Tool | Language supported |
 | --- | --- |
 | Brakeman  | Ruby, Rails |
