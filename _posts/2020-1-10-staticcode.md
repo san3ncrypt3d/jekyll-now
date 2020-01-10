@@ -50,7 +50,7 @@ RECOMMENDED TOOLS
 
 
  
- ##Brakeman
+ **Brakeman**
 
 | Source | [https://github.com/presidentbeef/brakeman](https://github.com/presidentbeef/brakeman) |
 | --- | --- |
@@ -61,10 +61,100 @@ RECOMMENDED TOOLS
 | Comment | This is preferred tool for ruby code analysis for finding vulnerability. |
 
 
-##Reek
+**Reek**
 
 | Source | [https://github.com/troessner/reek](https://github.com/troessner/reek) |
 | --- | --- |
 | Configuration and setup | Requires additional Gem dependencies |
 | Description | Reek checks for code smells and programming mistakes such as tab detection. Less focused on security vulnerability and more focused on business logical errors and hygiene errors. |
 | Comment | Not the best for vulnerability analysis, good for best coding practices. |
+
+## Rubocop
+
+| Source | [https://github.com/rubocop-hq/rubocop](https://github.com/rubocop-hq/rubocop) |
+| --- | --- |
+| Configuration and setup | Easy setup |
+| Description | Rubocop check for offenses in codes such as formatting issues and RuboCop can also automatically fix some of the problems present in the code.  Additionally, returns hardcoded values &amp; public keys present in the code. |
+| Comment | More focused on code hygiene. |
+
+
+
+## Rails\_best\_practice
+
+
+
+| Source | [https://github.com/flyerhzm/rails\_best\_practices](https://github.com/flyerhzm/rails_best_practices) |
+| --- | --- |
+| Configuration and setup | Time consuming but easy set up |
+| Description | A static code analyzer for Ruby on Rails applications that finds - among other things - common patterns that might lead to security vulnerabilities such as use of dangerous attributes. Focused both on security vulnerability and code hygiene. However, it doesn&#39;t notify user any common vulnerabilities in the code. Based on a set of rules. |
+| Comment | We can customize this configuration file. Returns too many warnings which makes it difficult to find any high vulnerabilities returned. |
+
+## TruffleHog
+
+| Source | [https://github.com/dxa4481/truffleHog.git](https://github.com/dxa4481/truffleHog.git) |
+| --- | --- |
+| Configuration and setup | Easy setup |
+| Description | Go through git source code, find secrets that&#39;s committed on top over or revision history. A lot of false positives. Reduced noise due to use of regex. (entropy detection-based tool). |
+| Comment | Good as an initial scan tool for git source codes, High manual effort needed due to false positives. |
+
+## Pyright
+
+| Source | [https://githulb.com/Microsoft/pyright](https://githulb.com/Microsoft/pyright)  |
+| --- | --- |
+| Configuration and setup | Easy if you have npm installed, otherwise will have to configure node/npm.   |
+| Description |
+- Based on type-checking
+Pyright doesn&#39;t look for most common vulnerabilities. However, returns a lot of errors based on code hygiene. |
+
+## Jshint
+
+| Source | [https://jshint.com/](https://jshint.com/)  |
+| --- | --- |
+| Configuration and setup | Configuration and setup are really easy using npm command.  |
+| Description |  This static code analyzing tool returns a lot of errors based on code hygiene. However, doesn&#39;t returns any security vulnerabilities in the code. |
+| Comment | Results include: semicolon missing, function already defined etc. |
+
+## Rips
+
+| Source | [https://sourceforge.net/projects/rips-scanner/](https://sourceforge.net/projects/rips-scanner/) |
+| --- | --- |
+| Configuration and setup |   Configuration is a little complicated since it runs on local host.
+- Set up apache2
+- Set up mysql
+Access the rip downloaded folder via localhost. |
+| Description |  This is a great tool for PHP code review. Its vulnerability based and check for client-side attacks and server-side attacks. The scan runs fast, and results looks neat. Additionally, it has features such as verbosity level, regex-based searches etc.    Pros:
+- Fast results with range of security controls
+- Nice reporting with visualizations makes fixing vulnerabilities faster
+  |
+
+## Jsprime
+
+| Source | https://github.com/dpnishant/jsprime |
+| --- | --- |
+| Configuratinn and setup | Easy setup |
+| Description | This static code analyzer is focused on vulnerability and checks for common vulnerabilities such as XSS. However, it returns a lot of false positives . Moreover, high level of manual effort is necessary since each JS file have to be copy pasted into the jsprime interface for analysis. |
+
+## NodeJsScan
+
+| Source | https://github.com/ajinabraham/NodeJsScan |
+| --- | --- |
+| Configuratinn and setup | Easy setup with python.&quot;python NodeJsScan.py -d \&lt;dir\&gt;&quot; |
+| Description | Security vulnerability focused and has a minimum of false positive. |
+| Comment |    |
+
+
+
+## YASCA
+
+| Source | http://www.scovetta.com/yasca.html |
+| --- | --- |
+| Configuratinn and setup | Install the msi |
+| Description | The scanner returns a lot of false positives. Although the scanner is not focused on security vulnerabilities, it returns some bad practices implemented in the source code. |
+| Comment |  It is a multi-language scanner |
+
+## Code Warrior
+
+| Source | https://github.com/CoolerVoid/codewarrior |
+| --- | --- |
+| Configuratinn and setup | Install using make |
+| Description | This is a Multilanguage scanner focused on security vulnerabilities. The scanner is only supported in Linux operating system and have a GUI. Returns good results comparatively and low number of false positives. |
