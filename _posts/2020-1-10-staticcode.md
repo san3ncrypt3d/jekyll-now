@@ -50,7 +50,7 @@ RECOMMENDED TOOLS
 
 
  
- Brakeman
+ ##Brakeman
 
 | Source | [https://github.com/presidentbeef/brakeman](https://github.com/presidentbeef/brakeman) |
 | --- | --- |
@@ -59,3 +59,12 @@ RECOMMENDED TOOLS
 | Pros | - Easy setup, configuration and fast scans. - Because it&#39;s specifically built for Ruby on Rails apps, it does a great job at checking configuration settings for best practices. - With the ability to check only certain subsets, each code analysis is able to be customizable to specific issues.|
 | Con | High rate of false positives |
 | Comment | This is preferred tool for ruby code analysis for finding vulnerability. |
+
+
+##Reek
+
+| Source | [https://github.com/troessner/reek](https://github.com/troessner/reek) |
+| --- | --- |
+| Configuration and setup | Requires additional Gem dependencies |
+| Description | Reek checks for code smells and programming mistakes such as tab detection. Less focused on security vulnerability and more focused on business logical errors and hygiene errors. |
+| Comment | Not the best for vulnerability analysis, good for best coding practices. |
