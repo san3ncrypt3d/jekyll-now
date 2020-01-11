@@ -153,4 +153,4 @@ Description:     This is a Multilanguage scanner focused on security vulnerabili
 
 
 
-LOL I was lazy to make tables for all the tools metioned above with additional details so if you have any questions let me know and I will clarify/answer your question(s).
+If you have any questions or need additional details let me know and I will clarify/answer your question(s).
