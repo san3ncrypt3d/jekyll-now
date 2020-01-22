@@ -5,12 +5,12 @@ title: IOT Security & Performance comparison of cryptographic algorithms
 
 **Abstract- A stand-alone IoT device is a non-standard computing device which has the ability to connect to the internet and transmit data. When various stand-alone IoT devices are connecting to the Internet, it brings a lot of challenges, such as scalability, naming, resource constraints, interoperability, security and privacy. Connectivity between the internet and everyday objects and the capability to exchange data between them arises a lot of potential privacy and security risks. As a result, potential security and privacy risks exist in broad scope, ranging from the physical world to the Internet, and if they are exploited it can cause a lot of damage. As a result of the risk’s mentioned above, it is critically important to test the existing cryptographic encryption/decryption techniques on IoT devices to determine if they are efficient enough in terms of execution time, power consumption and to determine if there is a need for a new lightweight cryptographic algorithm for IoT devices.**
 
-I.	 INTRODUCTION
+*I.	 INTRODUCTION
 
 The advent of IoT and the increase in the usage of application-based processors has led to a significant increase in the data being stored, transmitted and processed. As a result of this significant increase, the security around data storage, transmission and processing of data’s needs to be examined. The science of making digital data secure by preventing unauthorized access is called cryptography. The best practices used to secure communication is ideally by encrypting any communications. Some of the most common examples of IoT devices are Raspberry Pi Zero W, Raspberry Pi  3 Model B+ and BeagleBone Black. Figure [1],[2] and [3] depicts these IOT devices. Reference [1] depicts the various IoT based applications of these devices and [2] provides a comparison of Han algorithm with AES and RSA. However, implementing security mechanisms such as encryption or decryption may demand more power, increased resource consumption and delays. As a result, it is essential to analyze different encryption-decryption techniques and their effect on processors of IoT devices such as Raspberry Pi Zero W, Raspberry Pi 3 Model B+ and BeagleBone Black and analyze parameters such as efficiency, speed and power consumption. In this paper, we are going to implement, run and compare block ciphers such as AES, Blowfish, DES, Triple-DES and RC2. The ciphers will be running on the above mentioned IoT devices by encrypting file sizes ranging from 1 MB to 128 MB. By doing this will help to understand the need for light-weight cryptographic schemes for IoT devices.
 
 
-II.	 IoT DEVICES
+*II.	 IoT DEVICES
 
 
 
@@ -21,6 +21,7 @@ The Raspberry Pi family is a series of single-board computers with high memory, 
 Raspberry Pi Zero W is designed to be as compact and flexible. It is a 1 GHz BCM2835 single-core processor with 512 MB RAM. The device is 65mm long by 30mm wide with802.11 b/g/n wireless LAN and Bluetooth. The device is also equipped with Mini HDMI and USB On-The-Go ports, Micro USB power, HAT-compatible 40-pin header, Composite video and reset headers and CSI camera connector. The devices mandate a microSD card with an OS (Raspbian Buster Lite) and a 5V power supply to power the board.
 
 ![](/images/2020-1-22-IOT/1.png)
+
 Figure 1. Board Representation of Raspberry Pi Zero W
 
 
@@ -29,6 +30,7 @@ B.	Raspberry Pi 3 Model B+
 The Raspberry Pi 3  Model B+ is the latest edition of the Raspberry Pi 3 range. This device is powered by a 64-bit quad-core Broadcom BCM2837B0, Cortex-A53 (ARMv8) processor running at 1.4GHz.  This device has an overall dimension of  85mm x 56mm x 17mm.  This device has 1GB LPDDR2 SDRAM which makes it a faster IoT device. This device also comes with a built-in 2.4GHz and 5GHz IEEE 802.11.b/g/n/ac wireless LAN, Bluetooth 4.2, BLE (low energy Bluetooth chip) on board. This board comes with a wide range of ports such as 4 USB 2.0 ports, Gigabit Ethernet over USB 2.0 (maximum throughput 300 Mbps), Extended 40-pin GPIO header pins, Full-size HDMI ports, CSI camera port for connecting a Raspberry Pi camera, 4-pole stereo output and composite video port and Power over Ethernet (PoE) capability via a separate PoE HAT as well as enhanced cooling features. This device needs an operating system (Raspbian or NOOBS) and a 3A charger at 5V for powering up the board.
 
 ![](/images/2020-1-22-IOT/2.png)
+
 Figure 2. Board Representation of Raspberry Pi 3 Model B+
 
 
@@ -41,7 +43,7 @@ Beagle Bone is very similar to Raspberry Pi, the BeagleBone family has multi-pur
 Figure 3. Board Representation of BeagleBone Black 
 
 
-III.	 BLOCK CIPHERS
+*III.	 BLOCK CIPHERS
 
 Block cipher is a cryptographic method of converting a block of text into encrypted form with a symmetric key.  Block cipher has various modes of operation to eliminate the chances of the similar encryption of identical blocks. Some of the different modes of operation in block ciphers are cipher block chaining (CBC), cipher feedback (CFB), counter (CTR), and Galois/Counter Mode (GCM),  ElectronicCode Book Mode (ECB) among others.  The block ciphers used in this paper are CBC and CFB.  Reference [8] explains various modes of operation in more details and the attacks on these ciphers. The various block ciphers used in this paper are AES, Blowfish, DES, Triple-DES and RC2.
 
@@ -52,6 +54,7 @@ A.	Cipher Block Chaining
 Created by IBM in 1976 according to reference [12], CBC mode performs an XOR to each plain text block to the ciphertext block that was created previously. And the final result is encrypted using whichever algorithm is used to encrypt like normal. The caveat for CBC mode is that due to the nature of this whole process, it cannot be performed on multiple threads at the same time, it only runs on a single thread, but despite this massive disadvantage, it is still widely used in a loT of applications. 
 
 ![](/images/2020-1-22-IOT/4.png)
+
 Figure 4. Encryption in CBC mode 
 
 
@@ -60,7 +63,11 @@ B.	Cipher Feedback
 Cipher Feedback (CFB) mode for block cipher is similar to CBC mode, but instead of XOR ciphertext with the plaintext for the next round, it encrypts the ciphertext from the previous rounds and then adds the output to the plaintext. CFB mode support multi-thread implementation, but the security level is comparable to CBC mode.
 
 ![](/images/2020-1-22-IOT/5.png)
+
 Figure 5. Encryption in CFB mode
+
+
+
 
 ●	Advanced Encryption Standard (AES) 
 
@@ -82,12 +89,13 @@ Triple DES was designed to correct the previous flaws of the DES system without 
 RC2, also known as ARC2, having a key length of 40-bit, and it's the weakest among the other cryptosystems that we are comparing it against (AES, DES,3DES). It was designed and built in the late ’80s for export, due to the regulation back then, restricting American companies to export more complex encryption system. By today’s hardware standard, RC2 can be broken by Brute Force attacks.
 
 
-IV.	EVALUATION OF CRYPTOGRAPHIC ALGORITHMS
+*IV.	EVALUATION OF CRYPTOGRAPHIC ALGORITHMS
 
 
 The comparison of devices used for this experiment is shown below: 
 
 ![](/images/2020-1-22-IOT/6.png)
+
 
 
 Evaluation of efficiency, performance and swiftness of Intel processors are explained in reference [6] and [7]. However, these evaluations are not the same for IoT devices, therefore, a similar approach is taken to evaluate cryptographic algorithms on IoT devices to find out the execution time and power consumption.
@@ -100,6 +108,7 @@ Figure [6] depicts the procedure that we used to obtain all the data in this pap
 ![](/images/2020-1-22-IOT/7.png)
 
 ![](/images/2020-1-22-IOT/8.png)
+
 Figure 7. Power Consumption Monitor 
 
 
@@ -110,13 +119,17 @@ The execution time in seconds and power consumption in milli-Ampere-hours for va
 
 The execution time in seconds and power consumption in milli-Ampere-hours for various files for block ciphers on the Raspberry Pi 3 Model B+ in CBC mode and CFB mode are as shown in Table III & Table IV:
 
+
 ![](/images/2020-1-22-IOT/11.png)
 ![](/images/2020-1-22-IOT/12.png)
 
+
 The execution time in seconds and power consumption in milli-Ampere-hours for various files for block ciphers on the BeagleBone Black in CBC mode and CFB mode are as shown in Table V & Table VI:
+
 
 ![](/images/2020-1-22-IOT/13.png)
 ![](/images/2020-1-22-IOT/14.png)
+
 
 Figure. 8 and 9 depict graphs comparing the execution speed of the various block ciphers on the Raspberry Pi Zero W, Raspberry Pi 3 Model B+ and Beagle Bone Black. Analyzing the graph, we can see the different execution speed for various file sizes.
 
@@ -126,29 +139,40 @@ From the Figure 10, 11 and 12, it's clear that power consumption and execution t
 
 
 ![](/images/2020-1-22-IOT/15.png)
+
 Figure 8. Execution Speed Comparison of Block Ciphers in CBC Mode between Raspberry Pi Zero W, Raspberry Pi 3 Model B+, BeagleBone Black.   
 
 ![](/images/2020-1-22-IOT/16.png)
+
 Figure 9. Execution Speed Comparison of Block Ciphers in CBC Mode between Raspberry Pi Zero W, Raspberry Pi 3 Model B+, BeagleBone Black
 
 
 ![](/images/2020-1-22-IOT/17.png)
+
 Figure 10. Power consumption of Raspberry Pi 3B+ 
 
 ![](/images/2020-1-22-IOT/18.png)
+
 Figure 11. Power consumption of BeagleBone Black
 
 ![](/images/2020-1-22-IOT/19.png)
+
 Figure 12. Power consumption of Raspberry Pi Zero W
 
 
-V.	CONCLUSION
+*V.	CONCLUSION
 
 
 In this paper, we tested and compared the performance of the most widely used IoT devices. The execution time of the various ciphers tested on BeagleBone Black and Raspberry Pi Zero W was nearly double the amount of time taken to perform the various schemes on Raspberry Pi 3 Model B+ due to the processing speed of both  BeagleBone Black and Raspberry Pi Zero W being lower than that of the Raspberry Pi 3 Model B+. Moreover, the power consumption and memory consumption on BeagleBone Black and Raspberry Pi Zero W were also noticed to be higher than that of Raspberry Pi 3 Model B+. As a result, the Raspberry Pi 3 Model B+ can perform efficient, secure and faster data transmission when compared to the other two IoT devices. However, the BeagleBone Black has better available functionality (replete GPIO pins) if there is a situation where several interfaces needed to be added. Moreover, when it comes to power consumption, we've concluded that based on the devices that we had, when performing different encryption algorithms, the type of algorithms does not have any impact on power consumption, running 60 seconds of AES will consume the exact same amount of power as running 60 seconds of RC2, the only variable dependent is time. However, there could be some alternative assumption to be made here; there might be some algorithms/mode of operations that can only be run on a single core while others might be able to utilize all the cores and threads on a device, which could potentially change the power consumption for a fixed amount of run time on a device. Based on the latest information provided by reference [12], only CFB mode and CTR mode supports multithreaded encryption operations. 
 
 
-VI.	AREA OF FURTHER RESEARCH 
+
+
+
+
+
+
+*VI.	AREA OF FURTHER RESEARCH 
 
 
 From reference[16] and [17] there already exist suitable lightweight cryptographic schemes for IoT applications so the next step in the project would be to either develop a new lightweight cryptographic algorithm that improves the performance, memory and resource consumption for various IoT devices discussed in the paper or to refine the cryptographic schemes that already exists.
@@ -157,7 +181,14 @@ From reference[16] and [17] there already exist suitable lightweight cryptograph
 
 
 
-References:
+
+
+
+
+
+
+
+**References:
 
 [1]   Mangla, Neha, and Priya Rathod. Iosrjournals.Org, 2017,    http://www.iosrjournals.org/iosr-jce/papers/Vol19-issue4/Version-3/K1904036272.pdf.
 
@@ -206,7 +237,7 @@ https://www.rapidtables.com/calc/electric/wh-to-mah-calculator.html
 
 
 
-Appendix 
+**Appendix 
 
 
 
