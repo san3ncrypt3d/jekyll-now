@@ -13,9 +13,9 @@ I have Developed Black Box Security test environments & conducted tests as part 
 
 I love participanting in Capture the Flag (CTF) and enjoy doing HTB.
 
-•Active participant of Defcon, Bsides, SecTor and pretty much go to all security conference I can :)
+Active participant of Defcon, Bsides, SecTor and pretty much go to all security conference I can :)
 
-•Lock picking enthusiast
+Lock picking enthusiast
 
 If you have any request for tutorial or need walk through for any box (HTB), Let me know. 
 
