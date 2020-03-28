@@ -22,7 +22,7 @@ Lock picking enthusiast
 
 If you have any request for tutorial or need walk through for any box (HTB), Let me know. 
 
-![useful image]({{ site.url }}/images/htb.png)
+![useful image]({{ site.url }}/images/aws.png)
 
 ![useful image]({{ site.url }}/images/aws.png)
 
