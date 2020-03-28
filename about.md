@@ -19,7 +19,6 @@ Lock picking enthusiast
 
 If you have any request for tutorial or need walk through for any box (HTB), Let me know. 
 
-src=&quot;https://www.hackthebox.eu/badge/257860&quot;&gt;&lt;/script&gt;
-&lt;img src=&quot;https://www.hackthebox.eu/badge/image/257860&quot; alt=&quot;Hack The Box&quot;&gt;
+![](/images/htb.png)
 
 like to contact me?  click below :)
