@@ -24,6 +24,6 @@ If you have any request for tutorial or need walk through for any box (HTB), Let
 
 ![useful image]({{ site.url }}/images/aws.png)
 
-![useful image]({{ site.url }}/images/aws.png)
+![useful image]({{ site.url }}/images/htb.png)
 
 like to contact me?  click below :)
