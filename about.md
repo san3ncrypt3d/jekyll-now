@@ -19,6 +19,6 @@ Lock picking enthusiast
 
 If you have any request for tutorial or need walk through for any box (HTB), Let me know. 
 
-![_config.yml]({{ site.baseurl }}/images/htb.png)
+![](/images/htb.png)
 
 like to contact me?  click below :)
