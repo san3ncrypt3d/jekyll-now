@@ -7,20 +7,16 @@ permalink: /about/
 ![_config.yml]({{ site.baseurl }}/images/san.png)
 
 
-Hello guys - My name is sanjay Babu, I am a cyber security consulant specialised in security research, penetration testing, red teaming, malware, exploits, reverse engineering, source code review, hacking, social engineering etc..
+Hello guys - My name is sanjay Babu, I am a cyber security consulant specialised in security research, penetration testing, red teaming, malware exploits, reverse engineering, source code review, hacking, social engineering etc..
 
-• Efficiently synthesize project information and accurately establish project scope (Yes I have worked as a Jr Project Manager)
+I have Developed Black Box Security test environments & conducted tests as part of team for precautionary measures. I have Created written reports, detailing assessment findings and recommendations.
 
-• proven quality assurance, risk management and change management expertise
+I love participanting in Capture the Flag (CTF) and enjoy doing HTB.
 
-• Developed Black Box Security test environments & conducted tests as part of team for precautionary measures, Created written reports, detailing assessment findings and recommendations.
+Active participant of Defcon, Bsides, SecTor and pretty much go to all security conference I can :)
 
-• Performed risk assessments to ensure corporate compliance
+Lock picking enthusiast
 
-•Active participant of CTF
+If you have any request for tutorial or need walk through for any box (HTB), Let me know. 
 
-•Active participant of Defcon, Bsides, SecTor and pretty much go to all security conference I can :)
-
-•Lock picking enthusiast
-
-If you like to contact me click below :)
+like to contact me?  click below :)
