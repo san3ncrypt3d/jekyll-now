@@ -5,6 +5,8 @@ permalink: /about/
 ---
 
 ![_config.yml]({{ site.baseurl }}/images/san.png)
+![_config.yml]({{ site.baseurl }}/images/htb.png)
+
 
 
 Hello guys - My name is sanjay Babu, I am a cyber security consulant specialised in security research, penetration testing, red teaming, malware exploits, reverse engineering, source code review, hacking, social engineering etc..
@@ -19,6 +21,5 @@ Lock picking enthusiast
 
 If you have any request for tutorial or need walk through for any box (HTB), Let me know. 
 
-![](/images/htb.png)
 
 like to contact me?  click below :)
