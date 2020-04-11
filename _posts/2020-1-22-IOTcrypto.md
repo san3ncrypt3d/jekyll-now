@@ -2,6 +2,8 @@
 layout: post
 title: IOT Security & Performance comparison of cryptographic algorithms
 ---
+![](/images/2020-1-22-IOT/r.png)
+
 
 **Abstract- A stand-alone IoT device is a non-standard computing device which has the ability to connect to the internet and transmit data. When various stand-alone IoT devices are connecting to the Internet, it brings a lot of challenges, such as scalability, naming, resource constraints, interoperability, security and privacy. Connectivity between the internet and everyday objects and the capability to exchange data between them arises a lot of potential privacy and security risks. As a result, potential security and privacy risks exist in broad scope, ranging from the physical world to the Internet, and if they are exploited it can cause a lot of damage. As a result of the risk’s mentioned above, it is critically important to test the existing cryptographic encryption/decryption techniques on IoT devices to determine if they are efficient enough in terms of execution time, power consumption and to determine if there is a need for a new lightweight cryptographic algorithm for IoT devices.**
 
