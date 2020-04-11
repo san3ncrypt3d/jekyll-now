@@ -2,6 +2,7 @@
 layout: post
 title: Static code Analysis Tool
 ---
+![](/images/2020-1-10-staticcode/static.png)
 
 Hey Guys, For anyone who is intrested in code review and don't know where to start, I am going to be reviewing some of the static code review tools.
 
