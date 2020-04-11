@@ -2,6 +2,7 @@
 layout: post
 title: Cybersecurity as Realpolitik by Dan Geer 
 ---
+![](/images/2019-9-26-DanGeer/d.png)
 
 
 At a time where cyber security has reached the top concerns to senior leadership of companies, Dan Geer delivered a thought provoking key note speech at the Black Hat hacking conference where he claimed that “policy matters are now the most important matters”. He also spoke about the role of government in internet technology and suggestions for future.
