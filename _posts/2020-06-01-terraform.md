@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Postman walkthrough HTB 
+title: Spinning up ec2 using terraform  
 ---
 
 ![](/images/2020-06-01-terraform/0.png)
