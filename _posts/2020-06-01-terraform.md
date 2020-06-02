@@ -9,7 +9,7 @@ Hey guys, In this tutorial I wanted to share how we can spin up an ec2 instance 
 
 Terraform by HashiCorp provides a lot of example templetes for provising cloud platform such as AWS and Azure. However, when I tried to use the templete I encountred number of errors and was confused about where to find some of the things mentioned in the templete.
 
-Here is the basic templete by HashiCorp: https://www.terraform.io/docs/providers/aws/r/instance.html
+Here is the basic templete by HashiCorp: [https://www.terraform.io/docs/providers/aws/r/instance.html](https://www.terraform.io/docs/providers/aws/r/instance.html)
 
 For this tutorial I will be using a MacOS, So first we need to install terraform:
  
@@ -17,7 +17,7 @@ For this tutorial I will be using a MacOS, So first we need to install terraform
 $ brew install terraform
 
 ```
-For any other OS, refer : https://learn.hashicorp.com/terraform/getting-started/install.html
+For any other OS, refer : [https://learn.hashicorp.com/terraform/getting-started/install.html](https://learn.hashicorp.com/terraform/getting-started/install.html)
 
 
 This is how I spun up an ec2 instance in less than a minute: 
@@ -93,7 +93,7 @@ Step 4: At this point you can create a new user to get access key and secret key
 
 2) Where can you find the ami-id ?
 
-You can find any ami-id of images on AWS by "Amazon EC2 AMI Locator" - https://cloud-images.ubuntu.com/locator/ec2/
+You can find any ami-id of images on AWS by "Amazon EC2 AMI Locator" - [https://cloud-images.ubuntu.com/locator/ec2/](https://cloud-images.ubuntu.com/locator/ec2/)
 
 ![](/images/2020-06-01-terraform/7.png)
 
@@ -107,6 +107,10 @@ Step 1: Go to your aws console.Under "NETWORK & SECURITY", click on "key pair" a
 
 ![](/images/2020-06-01-terraform/8.png)
 ![](/images/2020-06-01-terraform/9.png)
+
+
+
+
 
 
 If you encounter any issue or need any assistance, ping me :)
