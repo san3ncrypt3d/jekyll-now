@@ -7,7 +7,7 @@ title: Postman walkthrough HTB
 
 Hey guys, In this tutorial I wanted to share how we can spin up an ec2 instance in amazon using terraform. 
 
-Terraform by HashiCorp provides a lot of example templetes for provising cloud platform such as AWS and Azure. However, we I tried to use the templete I encountred number of errors and was confused about where to find some of the things mentioned in the templete.
+Terraform by HashiCorp provides a lot of example templetes for provising cloud platform such as AWS and Azure. However, when I tried to use the templete I encountred number of errors and was confused about where to find some of the things mentioned in the templete.
 
 Here is the basic templete by HashiCorp: https://www.terraform.io/docs/providers/aws/r/instance.html
 
