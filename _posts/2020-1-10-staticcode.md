@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Static code Analysis Tool
+title: Static code Analysis Tools
 ---
 ![](/images/2020-1-10-staticcode/static.png)
 
