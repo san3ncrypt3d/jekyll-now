@@ -83,7 +83,7 @@ Appendix:
 
 Step 1: Go to your AWS console
 Step 2: Search for "IAM"
-![](/images/2020-06-01-terraform/4.png)
+![](/images/2020-06-01-terraform/5.png)
 
 Step 3: click on "users"
 Step 4: At this point you can create a new user to get access key and secret key or click on the existing user to get the creds.
