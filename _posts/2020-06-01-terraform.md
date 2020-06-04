@@ -63,7 +63,7 @@ Step 3:
 ```
 terraform apply 
 ```
-![](/images/2020-06-01-terraform/2.png)
+![](/images/2020-06-01-terraform/x.png)
 
 Now the instance is going to be created.
 
