@@ -8,7 +8,7 @@ permalink: /about/
 
 
 
-Hello guys - My name is sanjay Babu, I am a cyber security consulant specialised in security research, penetration testing, red teaming, malware exploits, reverse engineering, source code review, hacking, social engineering etc..
+Hello guys - My name is sanjay or san3ncrypt3d (my internet handle), I am a cyber security consulant specialised in security research, penetration testing, red teaming, malware exploits, reverse engineering, source code review, hacking, social engineering etc..
 
 I have Developed Black Box Security test environments & conducted tests as part of team for precautionary measures. I have Created written reports, detailing assessment findings and recommendations.
 
