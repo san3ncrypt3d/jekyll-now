@@ -26,9 +26,10 @@ Haha, interesting !! let’s just google it :
 We found a bunch of web shell. I am going to use the name of the webshell to do a directory brute force to find the hidden web shell.
 ![](/images/2020-08-3-traceback/7.png)
 
+Use the custom made list to brute force.
 
 ![](/images/2020-08-3-traceback/8.png)
-Use the custom made list to brute force.
+
 ![](/images/2020-08-3-traceback/9.png)
 
 Okay, we found a webshell named “smevk.php” which have default username and password set to “admin”
