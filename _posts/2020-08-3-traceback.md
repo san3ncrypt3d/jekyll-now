@@ -134,7 +134,7 @@ So now all we have to do is add the command to read the root.txt file on the 00-
 
 Now that we have added the command, lets log out of the system and ssh back in:
 
-![](/images/2020-08-3-traceback/25.png)
+![](/images/2020-08-3-traceback/26.png)
 
 8c3d9b75d897d321b9b13a19f6e5f6e1
 
