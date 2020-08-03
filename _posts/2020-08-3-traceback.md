@@ -89,7 +89,7 @@ In webadmin’s home directory, there are some files. We will check the content 
 
 From this we can see the user sysadmin uses lua, we can look for lua sudo abuse to escalate privilege.
 
-https://gtfobins.github.io/gtfobins/lua/#sudo
+REF: [https://gtfobins.github.io/gtfobins/lua/#sudo](https://gtfobins.github.io/gtfobins/lua/#sudo)
 
 
 
