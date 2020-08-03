@@ -35,20 +35,9 @@ Use the custom made list to brute force.
 Okay, we found a webshell named “smevk.php” which have default username and password set to “admin”
 ![](/images/2020-08-3-traceback/10.png)
 
+Now, we can upload our public key using the webshell to ssh into the box since port 22 is open (ref: nmap scan)
 
 ![](/images/2020-08-3-traceback/11.png)
-![](/images/2020-08-3-traceback/12.png)
-
-Now, we can upload our public key using the webshell to ssh into the box since port 22 is open (ref: nmap scan)
-![](/images/2020-08-3-traceback/13.png)
-![](/images/2020-08-3-traceback/14.png)
-![](/images/2020-08-3-traceback/15.png)
-
-Now ssh into the box using the private key.
-![](/images/2020-08-3-traceback/16.png)
-As you can see, we are webadmin. We need to escalate our privilege to view the user flag.
-![](/images/2020-08-3-traceback/17.png)
-In webadmin’s home directory, there are some files. We will check the content of the files for clues to escalate privilege. 
 ![](/images/2020-08-3-traceback/18.png)
 ![](/images/2020-08-3-traceback/19.png)
 ![](/images/2020-08-3-traceback/20.png)
