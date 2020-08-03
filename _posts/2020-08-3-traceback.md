@@ -61,20 +61,21 @@ Now, we can upload our public key using the webshell to ssh into the box since p
 ![](/images/2020-08-3-traceback/12.png)
 
 
-Now ssh into the box using the private key.
 
 ![](/images/2020-08-3-traceback/13.png)
 
+Now ssh into the box using the private key.
 
+
+
+![](/images/2020-08-3-traceback/14.png)
 
 As you can see, we are webadmin. We need to escalate our privilege to view the user flag.
 
 
-In webadmin’s home directory, there are some files. We will check the content of the files for clues to escalate privilege. 
-![](/images/2020-08-3-traceback/14.png)
-
 
 ![](/images/2020-08-3-traceback/15.png)
+In webadmin’s home directory, there are some files. We will check the content of the files for clues to escalate privilege. 
 
 
 
