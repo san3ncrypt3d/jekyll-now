@@ -83,24 +83,30 @@ In webadmin’s home directory, there are some files. We will check the content 
 ![](/images/2020-08-3-traceback/16.png)
 
 
+
+
+![](/images/2020-08-3-traceback/17.png)
+
 From this we can see the user sysadmin uses lua, we can look for lua sudo abuse to escalate privilege.
 
 https://gtfobins.github.io/gtfobins/lua/#sudo
 
 
-![](/images/2020-08-3-traceback/17.png)
-
-
-Now you can create a new *.lua script, and then imitate .bash_history to escalate privilege.execute the command
 
 ![](/images/2020-08-3-traceback/18.png)
 
+Now you can create a new *.lua script, and then imitate .bash_history to escalate privilege.execute the command
 
-We created a lua script named “hack.lua” and executed it as sysadmin
+
 
 
 ![](/images/2020-08-3-traceback/19.png)
 
+We created a lua script named “hack.lua” and executed it as sysadmin
+
+
+
+![](/images/2020-08-3-traceback/20.png)
 
 Wooo !!! we got user.
 
@@ -108,7 +114,6 @@ Wooo !!! we got user.
 
 Alright now let’s move on to hack the root user. After looking around for some time I used the pspy tool to monitor the programs being executed in the system and I found something interesting
 
-![](/images/2020-08-3-traceback/20.png)
 
 ![](/images/2020-08-3-traceback/21.png)
 
