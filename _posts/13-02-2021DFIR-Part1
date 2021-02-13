@@ -1,0 +1,192 @@
+---
+layout: post
+title: DFIR Tools PART 1
+---
+![](/images/2021-02-13-DFIR1/0.png)
+
+
+
+Recently I started looking for good DFIR tool, and I noticed that there are so many open source tools out there, so I wanted to try out tools and see which one is the best for me. During this process I made this review/documentation on tools I tried, so if you're looking for DFIR tools that fits for your need (quick and dirty or platform specific), this post might help you:
+**CimSweep (Live forensics - Windows)**
+
+
+CimSweep is a suite of CIM/WMI-based tools that enable the ability to perform incident response and hunting operations remotely across all versions of Windows.
+
+At its core, CimSweep makes it easy to remotely obtain the following information from any Windows operating system:
+
+●	Registry keys, values, value types, and value content with optional recursion
+●	Directory and file listing with optional recursion
+●	Event log entries
+●	Services
+●	Processes
+
+This core functionality was designed to facilitate the development of domain-specific functionality for incident responders, hunt operators, or anyone else needing to target information remotely over WMI.
+
+How to use:
+
+1)	Git clone [https://github.com/PowerShellMafia/CimSweep.git](https://github.com/PowerShellMafia/CimSweep.git)
+2)	Execute the following commands: 
+
+```
+Import-Module .\CimSweep.psd1
+Get-Command -Module CimSweep
+
+```
+
+![](/images/2021-02-13-DFIR1/1.png)
+
+
+
+**GRR (Live forensics – Multi-platform)**
+
+GRR Rapid Response is an incident response framework focused on remote live forensics.
+
+The goal of GRR is to support forensics and investigations in a fast, scalable manner to allow analysts to quickly triage attacks and perform analysis remotely.
+
+GRR consists of 2 parts: client and server.
+
+How to install:
+
+Follow the guide: 
+```
+[https://grr-doc.readthedocs.io/en/latest/installing-grr-server/from-release-deb.html](https://grr-doc.readthedocs.io/en/latest/installing-grr-server/from-release-deb.html
+)
+```
+
+Pro: GRR is that the client can be multi-platform.
+Cons: It can be difficult to configure. The server in this case is installed on an ubuntu machine. (kali on cloud failed multiple times).
+
+![](/images/2021-02-13-DFIR1/2.png)
+
+The binary depending upon the client OS have to be downloaded and installed on the targeted machine.
+
+Comment: I noticed that sometimes on the server side the newly added machines are not shown, and I had to re-run the binary.
+
+
+**Linux Explorer (Live forensics- Linux)**
+
+
+Easy-to-use live forensics toolbox for Linux endpoints written in Python & Flask. 
+
+This tool can be used to get information such as :
+●	View full process list
+●	Inspect process memory map & fetch memory strings easly
+●	Dump process memory in one click
+●	Automatically search hash in public services
+●	users list
+●	syslog
+●	auth.log(user authentication log)
+●	ufw.log(firewall log)
+●	bash history
+●	chkrootkit
+●	whois
+
+Other capabilities include: 
+
+●	Scan a file or directory using YARA signatures by @Neo23x0
+●	Scan a running process memory address space
+●	Upload your own YARA signature
+
+
+How to use: 
+
+```
+1)	wget https://github.com/intezer/linux-explorer/archive/master.zip -O master.zip
+2)	unzip master.zip
+3)	cd linux-explorer-master
+4)	./deploy.sh
+5)	Go to http://127.0.0.1:8080
+```
+![](/images/2021-02-13-DFIR1/3.png)
+
+
+Comment:
+Due to the lack of tutorial or documentation, troubleshooting can be difficult. 
+
+
+**FastIR Collector (Live forensics- Linux/Windows)**
+
+This tool collects different artifacts on live Linux and records the results in csv files. The tool collects:
+
+1)	System Informations
+2)	Last Logins
+3)	User's data
+4)	/tmp content
+5)	Autoruns
+6)	Files System Informations
+7)	Disks Informations
+8)	Connection’s
+
+Windows: 
+
+```
+How to use :
+1)	Download “ FastIR_x64.exe” (or “FastIR_x86.exe”) from the release page.
+2)	Run “fastIR_x64.exe --packages fs,evt,health,registry,memory,dump,FileCatcher” from a command prompt on the target machine on windows.
+```
+
+Additional Information
+Supported OS:  Windows、Lnux 
+
+![](/images/2021-02-13-DFIR1/4.png)
+![](/images/2021-02-13-DFIR1/5.png)
+
+Comment: Very easy to setup and run. The output is a zip file with all the information that can be used for forensic investigation/IR.  This tool can extract a lot of useful evidence from Windows. A single executable provides all the functionality.
+
+**The Sleuth Kit & Autopsy **
+
+
+Unix, Windows and MacOS based tool which helps in forensic analysis of computers. 
+
+MacOS setup is difficult and may cause issues. Easy setup on windows and Linux.
+
+Autopsy is very easy to use and has also been created extensible so that some of the modules that it normally been out of the box can be used together.
+
+Modules that been used with Autopsy such as follow:
+
+Timeline Analysis
+Hash Filtering
+Keyword Search
+Web Artifacts
+Data Carving
+Multimedia
+
+Autopsy also supports features that are only supported by commercial version of tools such as web artifact analysis and registry analysis.
+
+How to use :
+```
+1)	It comes build in kali Linux versions.  
+2)	Launch autopsy and navigate to “localhost:9999”
+3)	Windows OS download from here: https://www.autopsy.com/download/ 
+```
+
+![](/images/2021-02-13-DFIR1/6.png)
+
+Comment: The central repository in autopsy helps in working on a case with multiple team members. Some of the features such as “tag” are useful in tagging as we work through the image and look back when writing final report.
+
+** Triage-ir (Evidence Collector)**
+
+![](/images/2021-02-13-DFIR1/7.png)
+
+
+How to use :
+```
+1)	Download “TriageIR v.85.zip” from https://code.google.com/archive/p/triage-ir/downloads .
+2)	Run “ Triage Incident Response.exe” on the target machine.
+3)	Select “Yes” when prompted to download Sysinternals Toolset.
+```
+![](/images/2021-02-13-DFIR1/8.png)
+![](/images/2021-02-13-DFIR1/9.png)
+
+
+Supportted OS:  Windows
+
+Comments:
+The latest version did not work in some environments. I found some parsing errors in CSV files such as some CSV files were not separated by commas.
+
+
+
+
+
+
+
