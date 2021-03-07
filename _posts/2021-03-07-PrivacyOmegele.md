@@ -48,7 +48,7 @@ This article is to bring awareness to people who don’t understand that you’r
 
 **What can you do to be more safe ?**
 
-Well, blacklisting Omegle is a good idea for a parent or a caretaker of a minor. There are many ways to blacklist websites. Using “Pi-Hole” is my favorite.
+Well, blacklisting Omegle is a good idea for a parent or a caretaker of a minor. There are many ways to blacklist websites. I using “Pi-Hole” for this, here is a tutorial for that [setup Pi-Hole](https://www.youtube.com/watch?v=2Ib3o3OVIqI&ab_channel=LawrenceSystems).
 
 If you’re an adult and want to use Omegle, VPN is the way to go.
 
