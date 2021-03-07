@@ -52,7 +52,7 @@ Well, blacklisting Omegle is a good idea for a parent or a caretaker of a minor.
 
 If you’re an adult and want to use Omegle, VPN is the way to go.
 
-Online privacy evasion is far way dangerous than you think, and you should take it is imperative that you take it seriously.
+Online privacy invasion is far way dangerous than you think, and it is imperative that you take it seriously.
 
 
 
