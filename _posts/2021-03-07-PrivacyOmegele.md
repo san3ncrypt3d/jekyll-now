@@ -38,7 +38,8 @@ I have used a simple JavaScript to retrieve location of the users. This will giv
 ![](/images/2021-03-07-Omegle/3.png)
 
 
-Now with the latitude and Longitude, I can pin-point the exact location of the user using google map. Of course, it’s much easier if it’s a house for a physical evasion. ![image](https://user-images.githubusercontent.com/32395477/110251009-73aea700-7f4c-11eb-93a1-4791ea69f5e6.png)
+Now with the latitude and Longitude, I can pin-point the exact location of the user using google map. Of course, it’s much easier if it’s a house for a physical evasion.
+
 
 
 ![](/images/2021-03-07-Omegle/4.png)
