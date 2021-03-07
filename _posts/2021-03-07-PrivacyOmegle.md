@@ -11,7 +11,7 @@ Last month I read an article about Omegle on BBC titled: “Omegle: Children exp
 
 _Ref_: [BBC Article](https://www.bbc.com/news/technology-56085499 )
 
-Coincidentally, a week later I saw my niece playing with this website. Upon asking her, she mentioned many tik tok stars and YouTube star’s use this platform to prank on strangers considering this application connects you to a stranger “anonymously”. 
+Coincidentally, a week later I saw my niece navigating this website. Upon asking her, she mentioned many tik tok stars and YouTube star’s use this platform to prank on strangers considering this application connects you to a stranger “anonymously”. 
 
 **What is Omegle ...?**
 
