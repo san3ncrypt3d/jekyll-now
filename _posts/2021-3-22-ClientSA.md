@@ -14,7 +14,7 @@ Client-side controls of this kind are usually easy to circumvent; it is possible
 
 The penetration testing was performed on production environment with restricted access for my user account. 
 
-Proof of Concept
+**Proof of Concept**
 
 I always emphasize the importance of enumeration and you will see why in a second.
 
@@ -53,7 +53,7 @@ The Penetration Test was performed on an externally available web application th
 
 I was given an impersonation account to test and make sure that this account cannot execute any transactions
 
-Proof of Concept:
+**Proof of Concept:**
 
 At the first glance, the application had everything hidden/disabled on the account. I couldn’t do anything really, but like “offensive Security” always say “try harder”;
 
@@ -96,6 +96,7 @@ class="button">”
 
 Now is the easy part, click on submit:
 
+![](/images/2021-3-22-ClientSA/11.png)
 ![](/images/2021-3-22-ClientSA/12.png)
 
 
