@@ -8,9 +8,9 @@ I have seen a recent trend in applications lacking server-side validation, and o
 
 Client-side controls of this kind are usually easy to circumvent; it is possible to enter a benign value, intercept the submission with a proxy, and modify the data, and perform enumeration to bypass controls and compromise data. I will use example from couple of recent penetration tests I have performed.
 
-**Case 1:**
+# Case 1:
 
-***Background***
+## Background
 
 The penetration testing was performed on production environment with restricted access for my user account. 
 
@@ -43,9 +43,9 @@ So why don’t we change the user ID value to something random? Yes, you guessed
 As seen above, all users accounts can be hijacked, this possess tremendous confidently and integrity issues, and if an attacker changes the user password somehow, then this can cause availability issue as well.
 
 
-**Case 2:**
+# Case 2:
 
-***Background***
+## Background
 
 The Penetration Test was performed on an externally available web application that executes financial transactions. This specific application has two roles:
 1.	Impersonation Account (readOnly for customer service people to see customer’s account, this account should not be able to execute transaction’s) 
@@ -106,7 +106,7 @@ Now is the easy part, click on submit:
 This is a clear case of access control bypass leading to integrity issues. The developer tried to hide the submit/confirm button from the user, so the end user won’t be executing the transaction. The lack of server-side validation is the main reason why this bypass is possible. 
 
 
-Conclusion 
+# Conclusion 
 
 Client-side validation and obscuring etc. are good as long as server-side validation is executed after client-side validation. A user or hacker can submit the data through different channels, as we saw in case 2. These cases have huge impact on confidently, integrity and availability. 
  
