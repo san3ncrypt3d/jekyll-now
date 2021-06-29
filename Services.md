@@ -8,12 +8,17 @@ As part of our consultation, we have done security assessments in industries suc
 
 Services: 
 
-1) Web Application Penetration Test
-2) API Penetration Test
-3) IOS & Android Penetration Test
-4) Network Penetration Test
-5) Red Team Assessments
-6) Social Engineering Scenarios (Phishing/Spear Phishing/ Vishing)
+• Web Application Penetration Test
+
+• API Penetration Test
+
+• IOS & Android Penetration Test
+
+• Network Penetration Test
+
+• Red Team Assessments
+
+• Social Engineering Scenarios (Phishing/Spear Phishing/ Vishing)
 
 The Methodology we follow:
 
