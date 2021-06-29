@@ -32,7 +32,7 @@ The Methodology we follow:
 
 
 
-# {WHOAMI}
+# WHOAMI
 
 ![_config.yml]({{ site.baseurl }}/images/san.png)
 
