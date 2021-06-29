@@ -7,29 +7,6 @@ permalink: /About/
 
 San3ncrypt3d Inc. provides advisory services and consulting services for organization to securely conduct business by identifying any potential threat to the business and recommend remediation to improve the overall security posture of the organization.  
 
-As part of our consultation, we have done security assessments in industries such as Finance, Health care, Retail and Technology.
-
-Services: 
-
-1) Web Application Penetration Test
-2) API Penetration Test
-3) IOS & Android Penetration Test
-4) Network Penetration Test
-5) Red Team Assessments
-6) Social Engineering Scenarios (Phishing/Spear Phishing/ Vishing)
-
-The Methodology we follow:
-
-![_config.yml]({{ site.baseurl }}/images/Methodology.png)
-
-•	Reconnaissance - This process begins with getting to know the target using passive methods and network scanning.
-
-•	Vulnerability Identification – This process identifies valid findings from the scans to further exploit manually for the purpose of detecting security weaknesses   in the application.
-
-•	Exploitation – At this stage the security consultant safely exploits the identified vulnerability to gain access by breaching security of a system. Once, the       access is acquired, the focus turns to escalation and movement to identify technical risk and total business impact.
-
-•	Reporting - Detailing the vulnerabilities found and providing information on potential impact on the company if exploited.
-
 
 
 # WHOAMI
