@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: san3ncrypt3d
+name: San3ncrypt3d Inc
 
 # Short bio or description (displayed in the header)
 description: Making cybersecurity a habit & Privacy a Goal  
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/av.png
+avatar: /images/logo.png
 
 #
 # Flags below are optional
@@ -18,7 +18,7 @@ avatar: /images/av.png
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: sanjaybabu.1997@gmail.com
+  email: san3ncrypt3d@gmail.com
   facebook:
   flickr:
   github: san3ncrypt3d
