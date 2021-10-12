@@ -15,7 +15,7 @@ permalink: /About/
 
 
 
-**Sanjay Babu**, the Founder of San3ncrypt3d Inc. is a Cyber Security Consulant with a subject matter expertize in Security Research, Penetration Testing, Red Teaming, Reverse Engineering, Source Code Reviewing, Social Engineering Attack and other security assessments.
+**Sanjay Babu**, the Founder of San3ncrypt3d is a Cyber Security Consulant with a subject matter expertize in Security Research, Penetration Testing, Red Teaming, Reverse Engineering, Source Code Reviewing, Social Engineering Attack and other security assessments.
 
 Sanjay Babu is a certified Red Team Professional **(CRTP)**, Professional Scrum Master **(PSM1)**, AWS Certified Cloud Practitioner, and hold many other vendor certifications.
 
