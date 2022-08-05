@@ -32,4 +32,4 @@ As part of our consultation, we have done security assessments in industries suc
 
 •	**Reporting** - Detailing the vulnerabilities found and providing information on potential impact on the company if exploited.
 
-For any Security Consultation, send me an email via @**san3ncrypt3d@protonmail.com**
+For any Security Consultation, send me an email via @**san3ncrypt3d@gmail.com**
