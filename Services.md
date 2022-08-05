@@ -4,7 +4,7 @@ title: Services
 permalink: /Services/
 ---
 
-As part of our consultation, we have done security assessments in industries such as Finance, Health care, Retail and Technology.
+As part of our consultation, we have done security assessments in industries such as Finance, Health Care, Retail and Technology.
 
 **Services**: 
 
