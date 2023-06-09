@@ -1,0 +1,63 @@
+---
+layout: post
+title: Unveiling GitHub Actions: Security Awareness && Reverse Shell
+---
+![](/images/2023-06-09-GithubAction/0.png)
+
+## Introduction
+
+GitHub Actions is a powerful automation tool provided by GitHub that allows users to define custom workflows and automate various tasks in their software development lifecycle. However, it is important to use this tool responsibly and be aware of potential security risks. In this blog post, we will explore a scenario where a GitHub workflow is exploited to gain a reverse shell, discuss countermeasures, and raise awareness about best practices for secure GitHub Actions usage.
+
+## Understanding GitHub Actions
+
+
+GitHub Actions enables users to define custom workflows using YAML files. These workflows consist of a series of steps that execute various actions, such as building, testing, and deploying code. Actions can be created by the GitHub community or by individual users, providing a wide range of pre-built functionality that can be easily integrated into workflows.
+
+## The Scenario: Exploiting GitHub Actions for a Reverse Shell
+
+In this scenario, we will explore how a malicious actor could abuse GitHub Actions to gain unauthorized access to a target system using a reverse shell. A reverse shell allows the attacker to establish a connection to the target machine, providing remote control and access to its command-line interface.
+
+The attacker creates a GitHub workflow that contains a step executing a Python script. This Python script, disguised as a harmless operation, actually initiates a reverse shell connection to the attacker's machine. The workflow is designed to execute automatically whenever a repository is forked or when a workflow is run without proper code auditing.
+
+Anyone can publish an action into market place which could be re-used by other people
+
+
+![](/images/2023-06-09-GithubAction/1.png)
+
+In this case I published an Action to Github Marketplace which will essentially run a python script which connect the runner back to my command and control (C2).
+
+![](/images/2023-06-09-GithubAction/2.png)
+Reference: (Malicious Action)[https://github.com/san3ncrypt3d/security-awareness-action/tree/main]
+
+A victim without properly auditing the code can use my Action by putting the two lines of code above into their workflow which will give me access to their internal network (assuming the runner is self-hosted in Azure enterprise network), which then I can use to further pivot to steal credentials, run scans internally etc. 
+
+Let’s jump into a scenario:
+
+I am using a different GitHub account to “accidently” use the “Security Awareness Action” above. Let’s assume that when I created the malicious action, I made it look like it’s actually scanning the code for code quality and put a good description and icon etc. 
+
+
+![](/images/2023-06-09-GithubAction/3.png)
+
+The user “sanjay-babu” have a Node app and he would like to re-use an action for code quality so he put the action into his workflow file
+
+![](/images/2023-06-09-GithubAction/4.png)
+
+Now this workflow gets triggered every time during a PUSH to Main branch and a connection come back to my C2.
+
+![](/images/2023-06-09-GithubAction/5.png)
+
+As the Action runs, I get a connection and I can issue commands as I please:
+
+![](/images/2023-06-09-GithubAction/6.png)
+
+# Countermeasures: Protecting Against Malicious GitHub Actions
+
+To ensure the security of your GitHub Actions and prevent abuse, consider implementing the following countermeasures:
+
+Code Review and Auditing: Always review and audit the code of any GitHub Actions you plan to use in your workflows. This includes actions from the GitHub Marketplace or actions created by other users. Look for signs of malicious intent or potential security vulnerabilities.
+
+Restrict Workflow Execution: Define explicit triggers and conditions for your workflows to prevent them from being executed in unintended scenarios. Only allow execution in trusted environments and when the code has been properly audited.
+
+In addition to code review and restricting workflow execution, another valuable countermeasure for enhancing the security of GitHub Actions is the use of verified actions. Verified actions are actions that have been reviewed and approved by GitHub to meet certain security and quality standards. They are marked with a verified badge, indicating that they come from trusted sources.
+
+
