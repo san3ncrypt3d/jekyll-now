@@ -11,7 +11,7 @@ permalink: /About/
 
 # WHOAMI
 
-![_config.yml]({{ site.baseurl }}/images/san1.png)
+![_config.yml]({{ site.baseurl }}/images/san2.png)
 
 
 
