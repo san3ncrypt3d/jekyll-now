@@ -1,8 +1,26 @@
-# OWASP Top 10 and Threat Modeling: Building a Secure Future
+# OWASPGPT-10 : An AI Powered Threat Modelling Tool
 
 ## Introduction
 
-OWASPGPT-10 is a groundbreaking application designed to streamline threat modeling by aligning it with the OWASP Top 10 methodology. In essence, this tool enables standardized threat modeling, akin to how many organizations map vulnerabilities identified through various sources like pentests and DAST scans to the OWASP Top 10.
+OWASPGPT-10 is a tool designed to streamline threat modeling by aligning it with the OWASP Top 10 methodology. The tool generate threats and mitigation based on a description provided by a user. A framework such as OWASP top 10 can be used by organizations to maintain consistency and alignment when mapping vulnerabilities from different sources like penetration testing, dynamic application security testing (DAST) scans and Threat Modelling.
+
+
+## Benefits of Standardized Threat Modeling
+
+OWASP Top 10 is widely adopted across the security landscape. By aligning threat models with these standards, OWASPGPT-10 offers several advantages:
+- **Standardization**: Standardizing threat models enhances consistency and understanding across teams.
+- **Efficiency**: Allows easy mapping of identified vulnerabilities to well-defined categories.
+- **Integration**: Facilitates integration with existing vulnerability management practices.
+
+## Embracing AI for Threat Modeling
+
+OWASPGPT-10 leverages AI-powered threat modeling, utilizing OpenAI's GPT models. This not only standardizes the process but also minimizes the human bias involved in threat identification. Many organizations have opted to disable ChatGPT to prevent potential misuse, the way OWASPGPT-10 is designed, it limit the  exposure solely to threat modeling, it enables engineers to adopt the tool while mitigating the misuse of AI capabilities.
+
+Additionally, using an AI-powered threat modeler offers several advantages over manual threat generation. First, it significantly reduces time and effort, enabling quicker identification of potential threats and their mitigations. Additionally, AI models continuously learn from vast datasets, staying updated with emerging threats.
+
+Manual threat generation involves extensive human resources, including skilled security analysts. It demands ongoing training and expertise, incurring high labor costs. Conversely, while initial investment might be necessary for AI implementation, long-term costs are comparatively lower, mainly through reduced human labor and scalability
+
+
 
 ## Leveraging OWASP Top 10 Methodology
 
@@ -84,18 +102,5 @@ OWASPGPT-10 is a groundbreaking application designed to streamline threat modeli
 - **Insecure Default Settings**: I9
 - **Lack of Physical Hardening**: I10
 
-## Benefits of Standardized Threat Modeling
 
-OWASP Top 10 is widely adopted across the security landscape. By aligning threat models with these standards, OWASPGPT-10 offers several advantages:
-- **Standardization**: Standardizing threat models enhances consistency and understanding across teams.
-- **Efficiency**: Allows easy mapping of identified vulnerabilities to well-defined categories.
-- **Guidance**: Provides guidance on prevalent risks, aiding in focused security efforts.
-- **Integration**: Facilitates integration with existing vulnerability management practices.
 
-## Embracing AI for Threat Modeling
-
-OWASPGPT-10 leverages AI-powered threat modeling, utilizing OpenAI's GPT models. This not only standardizes the process but also minimizes the human bias involved in threat identification. By limiting the application's exposure solely to threat modeling, it enables engineers to adopt the tool while mitigating the misuse of AI capabilities.
-
-## Conclusion
-
-OWASPGPT-10 is a visionary tool designed to revolutionize threat modeling. By integrating with the OWASP Top 10, it empowers organizations to fortify their security posture by identifying and addressing threats systematically and comprehensively.
