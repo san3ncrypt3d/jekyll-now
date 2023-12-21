@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  OWASPGPT-10 : An AI Powered Threat Modelling Tool
+title: OWASPGPT-10 : An AI Powered Threat Modelling Tool
 ---
-
 ## Introduction
 
 OWASPGPT-10 is a tool designed to streamline threat modeling by aligning it with the OWASP Top 10 methodology. The tool generate threats and mitigation based on a description provided by a user. A framework such as OWASP top 10 can be used by organizations to maintain consistency and alignment when mapping vulnerabilities from different sources like penetration testing, dynamic application security testing (DAST) scans and Threat Modelling.
