@@ -1,4 +1,8 @@
-# OWASPGPT-10 : An AI Powered Threat Modelling Tool
+---
+layout: post
+title:  OWASPGPT-10 : An AI Powered Threat Modelling Tool
+---
+![](/images/2023-owaspgpt10/0.png)
 
 ## Introduction
 
